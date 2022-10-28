@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { InsightsModule } from './insights/insights.module';
 import { DataSetupModule } from './data-setup/data-setup.module';
+import { SharedContentModule } from '../../shared-lib/src/lib/shared-content.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DataSetupModule } from './data-setup/data-setup.module';
     AppRoutingModule,
     HomeModule,
     InsightsModule,
-    DataSetupModule
+    DataSetupModule,
+    SharedContentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
