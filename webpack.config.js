@@ -42,10 +42,11 @@ module.exports = {
         // },
 
         shared: share({
-          "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
-          "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
-          "@angular/common/http": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
-          "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+          "@angular/core": { singleton: true, eager: true }, 
+          "@angular/common": { singleton: true, eager: true }, 
+          "@angular/common/http": { singleton: true, eager: true }, 
+          "@angular/router": { singleton: true, eager: true },
+          "shared-lib": { singleton: true, eager: true },
 
           ...sharedMappings.getDescriptors()
         })
